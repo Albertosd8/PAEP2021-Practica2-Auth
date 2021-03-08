@@ -1,0 +1,20 @@
+<div class="login">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group login-buttons">
+      <button type="button" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-danger" id='google-login'>Login with Google</button>
+    </div>
+  </form>
+</div>
+<script>
+  const googleLogin = document.querySelector('#google-login');
+  googleLogin.addEventListener('click', () => window.location.replace('http://localhost:3000/auth/google'))
+</script>
